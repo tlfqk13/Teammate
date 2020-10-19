@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_btn1"
+        android:title="전화번호부"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_btn2"
+        android:title="카페 검색"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_btn3"
+        android:text="action_btn3"
+        android:title="전화"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_btn4"
+        android:title="전화"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/item1"
+                android:title="김민정"/>
+            <item
+                android:id="@+id/item2"
+                android:title="손동규"/>
+            <item
+                android:id="@+id/item3"
+                android:title="최지연"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_btn5"
+        android:title="손동규"
+        app:showAsAction="withText" />
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.tlaabs.timetableviewdemo">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/teammate_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/teammate_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.github.tlaabs.timetableviewdemo.EditActivity"></activity>
+        <activity android:name=".SplashActivity" android:theme="@style/SplashTheme" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CafeSearchActivity"></activity>
+        <activity android:name=".ContactActivity"></activity>
+        <activity android:name=".MMenuActivity"></activity>
+        <activity android:name="com.github.tlaabs.timetableviewdemo.MainActivity">
+        </activity>
+
+    </application>
+
+</manifest>
